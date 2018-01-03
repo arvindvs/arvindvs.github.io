@@ -80,7 +80,11 @@ html, body{
 	margin-left: 45px;
 }
 
-
+#resumeLink{
+	position: absolute;
+	top: 500px;
+	margin-left: -96px;
+}
 
 
 .image-circle{
