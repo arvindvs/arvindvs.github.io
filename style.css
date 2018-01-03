@@ -61,7 +61,7 @@ html, body{
 	left:0px;
 	right:0px;
 	
-	color:white; <!--color4-->
+	color:white;
 }
 
 #linkedInLogo{
@@ -117,4 +117,9 @@ html, body{
 	height:50px;
 }
 
+.social-media:hover{
+	width:50px;
+	height:50px;
+	background-color: #f48642; <!--color4-->
+}
 
