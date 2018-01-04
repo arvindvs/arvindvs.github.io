@@ -3,39 +3,114 @@ html, body{
 	padding:0;
 }
 
-#menu{
-	position: relative;
-	display: block;
-	height: 100%;
-	text-align: center;
-	background-color: #333f54; <!--color1-->
-}
-
-#button-container{
-	position: relative;
-	height: 100%;
-}
-
-
-
-
+/* ---------------------------------------------------------------------------------HEADER------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #header{
 	position: relative;
+	overflow:hidden; 
 	margin-top: 0px;
 	text-align: center;
-	height: 600px;
+	height: 100vh;
 	width:100%;
-	background-color: #1d58b7; <!--color1-->
+	background-color: transparent;
 }
 
-#profile{
+#menu{
+	margin:0;
+	padding:0;
 	position: absolute;
-	top: 80px;
-	width:50%;
-	margin-left: -100px;
-	width:200px;
-	height:200px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+#arvindLogo{
+	position: absolute;
+	top:5px;
+	left:5px;
+	height:35px;
+	width: 35px;
+}
+
+#button-container{
+	margin:0;
+	padding:0;
+	position: absolute;
+	top:0;
+	right:20px;
+	height: 100%;
+}
+
+#button-container .menu-button{
+	color: white;
+}
+
+#button-container:hover .menu-button {
+	color: #999;
+}
+
+#button-container:hover .menu-button:hover {
+	color: white;
+}
+
+#contact{
+	color: white;
+	background-color: #7395ae;
+	border-radius: 6px;
+	margin: 8px;
+	padding: 7px 7px
+	
+	/*margin:0;
+	display: inline-block;
+	border: none;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 15px;
+	text-align: center;*/
+}
+#contact:hover{
+	background-color: #557a95;
+}
+#button-container:hover #contact{
+	color: white;
+}
+
+#resumeLink{
+	color: white;
+	background-color: #7395ae;
+	border-radius: 6px;
+	margin: 8px;
+	padding: 7px 7px
+}
+#resumeLink:hover{
+	background-color: #557a95;
+}
+#button-container:hover #resumeLink{
+	color: white;
+}
+
+
+#sfBridge{
+	position: fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+#blackFilter{
+	background-color: black;
+	opacity: 0.65;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	height: 100%;
+	width:100%;
 }
 
 #name{
@@ -45,47 +120,170 @@ html, body{
 	text-align: center;
 	color:white;
 	
-	position:absolute;
-	top: 260px;
+	position:fixed;
+	top: 165px;
 	left:0px;
 	right:0px;
+}
+
+#name span{
+	font-size: 95px;
+	font-weight: bold;
+	left: 25px;
+}
+
+#name.animate{
+	animation-name: lift1;
+	animation-duration: 1.25s;
+    animation-timing-function: ease;
+	animation-iteration-count: 1;
+    animation-direction: normal;
+	animation-delay: 1.1s;
+	animation-fill-mode: both;
+}
+
+@keyframes lift1 {
+	from{
+		opacity: 0;
+		top: 225px;
+		left:0px;
+		right:0px;
+		animation-timing-function: ease;
+	}
+	to{
+		opacity: 1;
+		top: 165px;
+		left:0px;
+		right:0px;
+		animation-timing-function: ease;
+	}
 }
 
 #description{
 	font-family: "Arial Narrow", Arial, sans-serif;
 	font-size: 25px;
+	font-style: italic;
 	text-align: center;
 	
-	position:absolute;
-	top: 325px;
+	position:fixed;
+	top: 530px;
 	left:0px;
 	right:0px;
 	
 	color:white;
 }
+#description.animate{
+	animation-name: lift2;
+	animation-duration: 1.25s;
+    animation-timing-function: ease;
+	animation-iteration-count: 1;
+    animation-direction: normal;
+	animation-delay: 2.3s;
+	animation-fill-mode: both;
+}
+@keyframes lift2 {
+	from{
+		opacity: 0;
+		top: 590px;
+		animation-timing-function: ease;
+	}
+	to{
+		opacity: 1;
+		top: 530px;
+		animation-timing-function: ease;
+	}
+}
+
+
+/* ---------------------------------------------------------------------------------SOCIAL MEDIA-------------------------------------------------------------------------------*/
+
+
+
+
 
 #linkedInLogo{
-	position: absolute;
-	top: 425px;
+	position: fixed;
+	top: 600px;
 	margin-left: -95px;
 }
+#linkedInLogo.animate{
+	animation-name: lift3;
+	animation-duration: 1.25s;
+    animation-timing-function: ease;
+	animation-iteration-count: 1;
+    animation-direction: normal;
+	animation-delay: 2.3s;
+	animation-fill-mode: both;
+}
 #githubLogo{
-	position: absolute;
-	top: 425px;
+	position: fixed;
+	top: 600px;
 	margin-left: -25px;
 }
+#githubLogo.animate{
+	animation-name: lift3;
+	animation-duration: 1.25s;
+    animation-timing-function: ease;
+	animation-iteration-count: 1;
+    animation-direction: normal;
+	animation-delay: 2.3s;
+	animation-fill-mode: both;
+}
 #researchLogo{
-	position: absolute;
-	top: 425px;
+	position: fixed;
+	top: 600px;
 	margin-left: 45px;
 }
-
-#resumeLink{
-	position: absolute;
-	top: 500px;
-	margin-left: -96px;
+#researchLogo.animate{
+	animation-name: lift3;
+	animation-duration: 1.25s;
+    animation-timing-function: ease;
+	animation-iteration-count: 1;
+    animation-direction: normal;
+	animation-delay: 2.3s;
+	animation-fill-mode: both;
+}
+@keyframes lift3 {
+	from{
+		opacity: 0;
+		top: 660px;
+		animation-timing-function: ease;
+	}
+	to{
+		opacity: 1;
+		top: 600px;
+		animation-timing-function: ease;
+	}
 }
 
+
+
+
+
+
+/* ---------------------------------------------------------------------------------BOX 1-------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#box1{
+	position: relative;
+	overflow:hidden; 
+	margin-top: 0px;
+	text-align: center;
+	height: 100vh;
+	width:100%;
+	background-color: white;
+}
+
+#profile{
+	position: relative;
+	/*top: 80px;
+	width:50%;
+	margin-left: -100px;*/
+	width:200px;
+	height:200px;
+}
 
 .image-circle{
 	border-radius: 50%;
@@ -95,25 +293,10 @@ html, body{
 	margin:0;
 	display: inline-block;
 	border: none;
-	color: white;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 15px;
 	text-align: center;
-	padding: 15px 24px;
-	
-	background-color: #333f54; <!--color1-->
-}
-
-.menu-button:hover{
-	margin:0;
-	display: inline-block;
-	border: none;
-	color: white;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size:15px;
-	text-align: center;
-	padding: 15px 24px;
-	background-color: #1c2430; <!--color4-->
+	padding: 15px 15px;
 }
 
 .social-media{
@@ -124,6 +307,6 @@ html, body{
 .social-media:hover{
 	width:50px;
 	height:50px;
-	background-color: #f48642; <!--color4-->
+	background-color: #f48642; /*color4*/
 }
 
