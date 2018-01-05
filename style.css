@@ -28,6 +28,7 @@ html, body{
 	height: auto;
 	width: 100%;
 	text-align: center;
+	z-index: 1;
 }
 
 #arvindLogo{
@@ -45,19 +46,31 @@ html, body{
 	top:0;
 	right:20px;
 	height: 100%;
+	text-align: right;
 }
 
 #button-container .menu-button{
 	color: white;
 }
 
-#button-container:hover .menu-button {
+#turn-gray:hover .menu-button {
 	color: #999;
 }
 
 #button-container:hover .menu-button:hover {
 	color: white;
 }
+
+#ext-links{
+	float:left;
+}
+
+#turn-gray{
+	float: left;
+}
+
+
+
 
 #contact{
 	color: white;
