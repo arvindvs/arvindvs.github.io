@@ -15,8 +15,10 @@ html, body{
 	text-align: center;
 	height: 100vh;
 	width:100%;
-	background-color: transparent;
+	background-color: #7395ae;
 }
+
+/* ---------------------------------------------------------------------------------MENU------------------------------------------------------------------------------------*/
 
 #menu{
 	margin:0;
@@ -69,23 +71,14 @@ html, body{
 	float: left;
 }
 
-
-
-
 #contact{
 	color: white;
 	background-color: #7395ae;
 	border-radius: 6px;
 	margin: 8px;
 	padding: 7px 7px
-	
-	/*margin:0;
-	display: inline-block;
-	border: none;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 15px;
-	text-align: center;*/
 }
+
 #contact:hover{
 	background-color: #557a95;
 }
@@ -108,23 +101,34 @@ html, body{
 }
 
 
+/* ----------------------------------------------------------------------------HEADER BG & FILTER------------------------------------------------------------------------------*/
+
+
 #sfBridge{
 	position: fixed;
+	margin-right:auto;
+	margin-top:auto;
+	margin-left:auto;
+	margin-bottom:auto;
 	top:0;
+	right:0;
 	left:0;
-	height:100%;
-	width:100%;
+	bottom:0;
+	width:1700px;
 }
 
 #blackFilter{
+	position: absolute; 	
 	background-color: black;
 	opacity: 0.65;
-	position: absolute; 
 	top: 0; 
-	left: 0; 
+	left: 0;	
 	height: 100%;
 	width:100%;
 }
+
+/* ------------------------------------------------------------------------------INTRODUCTION----------------------------------------------------------------------------------*/
+
 
 #name{
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -134,7 +138,8 @@ html, body{
 	color:white;
 	
 	position:fixed;
-	top: 165px;
+	/*top: 165px;*/
+	top: 22.4%;
 	left:0px;
 	right:0px;
 }
@@ -158,18 +163,29 @@ html, body{
 @keyframes lift1 {
 	from{
 		opacity: 0;
-		top: 225px;
+		/*top: 225px;*/
+		top: 30.6%;
 		left:0px;
 		right:0px;
 		animation-timing-function: ease;
 	}
 	to{
 		opacity: 1;
-		top: 165px;
+		/*top: 165px;*/
+		top: 22.4%;
 		left:0px;
 		right:0px;
 		animation-timing-function: ease;
 	}
+}
+
+#extra-info{
+	position: fixed;
+	top: 72.1%;
+	text-align: center;
+	height: auto;
+	width:100%;
+	background-color: blue;
 }
 
 #description{
@@ -178,8 +194,10 @@ html, body{
 	font-style: italic;
 	text-align: center;
 	
-	position:fixed;
-	top: 530px;
+	position:absolute;
+	/*top: 530px;*/
+	/*top: 72.1%;*/
+	top:0px;
 	left:0px;
 	right:0px;
 	
@@ -197,26 +215,28 @@ html, body{
 @keyframes lift2 {
 	from{
 		opacity: 0;
-		top: 590px;
+		/*top: 590px;*/
+		/*top: 80.3%;*/
+		top: 60px;
 		animation-timing-function: ease;
 	}
 	to{
 		opacity: 1;
-		top: 530px;
+		/*top: 530px;*/
+		/*top: 72.1%;*/
+		top: 0px;
 		animation-timing-function: ease;
 	}
 }
 
 
-/* ---------------------------------------------------------------------------------SOCIAL MEDIA-------------------------------------------------------------------------------*/
-
-
-
-
+/* ----------------------------------------------------------------------------SOCIAL MEDIA ICONS-------------------------------------------------------------------------------*/
 
 #linkedInLogo{
-	position: fixed;
-	top: 600px;
+	position: absolute;
+	/*top: 600px;*/
+	/*top: 81.6%;*/
+	top: 70px;
 	margin-left: -95px;
 }
 #linkedInLogo.animate{
@@ -229,8 +249,10 @@ html, body{
 	animation-fill-mode: both;
 }
 #githubLogo{
-	position: fixed;
-	top: 600px;
+	position: absolute;
+	/*top: 600px;*/
+	/*top: 81.6%;*/
+	top: 70px;
 	margin-left: -25px;
 }
 #githubLogo.animate{
@@ -243,8 +265,10 @@ html, body{
 	animation-fill-mode: both;
 }
 #researchLogo{
-	position: fixed;
-	top: 600px;
+	position: absolute;
+	/*top: 600px;*/
+	/*top: 81.6%;*/
+	top: 70px;
 	margin-left: 45px;
 }
 #researchLogo.animate{
@@ -259,12 +283,16 @@ html, body{
 @keyframes lift3 {
 	from{
 		opacity: 0;
-		top: 660px;
+		/*top: 660px;*/
+		/*top: 89.8%;*/
+		top: 130px;
 		animation-timing-function: ease;
 	}
 	to{
 		opacity: 1;
-		top: 600px;
+		/*top: 600px;*/
+		/*top: 81.6%;*/
+		top: 70px
 		animation-timing-function: ease;
 	}
 }
@@ -297,6 +325,13 @@ html, body{
 	width:200px;
 	height:200px;
 }
+
+
+
+/* ---------------------------------------------------------------------------------CLASSES-------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .image-circle{
 	border-radius: 50%;
