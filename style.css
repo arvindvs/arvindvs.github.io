@@ -25,7 +25,7 @@ html, body{
 #menu{
 	margin:0;
 	padding:0;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	display: block;
@@ -328,7 +328,7 @@ html, body{
 	height:250px;
 }
 
-#about-wrapper{
+#about{
 	position: absolute;
 	right: 0;
 	height:100%;
@@ -540,12 +540,14 @@ html, body{
 	margin: 0px;
 	right:0;
 	text-align: center;
-	height: 400px;
+	height: 440px;
 	width:100%;
 	background-color: #8FB1D2;
 }
 
-#skills-wrapper{
+/* ---------------------------------------------------------------------------------LeftSide Title---------------------------------------------------------------------------*/
+
+#skills{
 	position: absolute;
 	top:60px;
 	left: 0;
@@ -583,6 +585,41 @@ html, body{
 	line-height: 1.2;
 }
 
+/* ---------------------------------------------------------------------------------RightSide Content---------------------------------------------------------------------------*/
+
+#skills-wrapper{
+	position: absolute;
+	top:0;
+	right: 0;
+	height:100%;
+	width:50%;
+	text-align: left;
+}
+
+#cplus-wrapper{
+	top: 34px;
+}
+
+#java-wrapper{
+	top: 98px;
+}
+
+#c-wrapper{
+	top: 162px;
+}
+
+#html-wrapper{
+	top: 226px;
+}
+
+#css-wrapper{
+	top: 290px;
+}
+
+#git-wrapper{
+	top: 354px;
+}
+
 /* ---------------------------------------------------------------------------------CLASSES-------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -615,9 +652,30 @@ html, body{
 	background-color: #F06543; /*color4*/
 }
 
-.changeColor{
-	background-color: rgba(0,0,0,0.7);
+.code-wrapper{
+	position: absolute;
+	left: 10%;
+	height: 50px;
+	width: 90%;
 }
+
+.code-title{
+	position: absolute;
+	left:0;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: #383D3B;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.code-graph{
+	position: absolute;
+	left: 100px;
+	height: 50px;
+}
+
 
 .textbox{
 	position:absolute;
@@ -627,6 +685,10 @@ html, body{
 	width: 27%;
 	background-color:transparent;
 	z-index:1;
+}
+
+.changeColor{
+	background-color: rgba(0,0,0,0.7);
 }
 
 .nav-up {
