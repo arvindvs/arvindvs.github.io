@@ -11,7 +11,7 @@ html, body{
 
 #header{
 	position: relative;
-	overflow:hidden; 
+	overflow:hidden;
 	margin-top: 0px;
 	text-align: center;
 	height: 100vh;
@@ -121,11 +121,11 @@ html, body{
 }
 
 #blackFilter{
-	position: absolute; 	
+	position: absolute;
 	background-color: black;
 	opacity: 0.65;
-	top: 0; 
-	left: 0;	
+	top: 0;
+	left: 0;
 	height: 100%;
 	width:100%;
 }
@@ -140,7 +140,7 @@ html, body{
 	font-weight: lighter;
 	text-align: center;
 	color:white;
-	
+
 	position:absolute;
 	/*top: 165px;*/
 	top: 22.4%;
@@ -197,14 +197,14 @@ html, body{
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-size: 25px;
 	text-align: center;
-	
+
 	position:absolute;
 	/*top: 530px;*/
 	/*top: 72.1%;*/
 	top:0px;
 	left:0px;
 	right:0px;
-	
+
 	color:white;
 }
 #description.animate{
@@ -344,11 +344,11 @@ html, body{
 	margin:0;
 	margin-left: 150px;
 	padding: 0;
-	
+
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-family: 'Arvo', Georgia, Times, serif;
 	font-size: 55px;
-	
+
 	color: #383D3B;
 }
 
@@ -373,7 +373,7 @@ html, body{
 
 #box2{
 	position: relative;
-	overflow:auto; 
+	overflow:auto;
 	margin: 0px;
 	right:0;
 	text-align: center;
@@ -416,10 +416,10 @@ html, body{
 	margin:0;
 	margin-left: 40px;
 	padding: 0;
-	
+
 	font-family: 'Arvo', Georgia, Times, serif;
 	font-size: 36px;
-	
+
 	color: #14426E;
 }
 
@@ -449,10 +449,10 @@ html, body{
 	margin:0;
 	margin-left: 40px;
 	padding: 0;
-	
+
 	font-family: 'Arvo', Georgia, Times, serif;
 	font-size: 36px;
-	
+
 	color: #AA4515;
 }
 
@@ -482,10 +482,10 @@ html, body{
 	margin:0;
 	margin-left: 30px;
 	padding: 0;
-	
+
 	font-family: 'Arvo', Georgia, Times, serif;
 	font-size: 36px;
-	
+
 	color: #AA8715;
 }
 
@@ -536,11 +536,11 @@ html, body{
 
 #box3{
 	position: relative;
-	overflow:auto; 
+	overflow:auto;
 	margin: 0px;
 	right:0;
 	text-align: center;
-	height: 440px;
+	height: 504px;
 	width:100%;
 	background-color: #8FB1D2;
 }
@@ -564,11 +564,11 @@ html, body{
 	margin:0;
 	margin-left: 150px;
 	padding: 0;
-	
+
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-family: 'Arvo', Georgia, Times, serif;
 	font-size: 55px;
-	
+
 	color: #383D3B;
 }
 
@@ -604,20 +604,24 @@ html, body{
 	top: 98px;
 }
 
-#c-wrapper{
-	top: 162px;
+#python-wrapper{
+    top: 162px;
 }
 
-#html-wrapper{
+#c-wrapper{
 	top: 226px;
 }
 
-#css-wrapper{
+#html-wrapper{
 	top: 290px;
 }
 
-#git-wrapper{
+#css-wrapper{
 	top: 354px;
+}
+
+#git-wrapper{
+	top: 418px;
 }
 
 /* ---------------------------------------------------------------------------------CLASSES-------------------------------------------------------------------------------------
